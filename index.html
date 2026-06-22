@@ -5,6 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>แบงค์เทเลคอมเซอร์วิส | ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร</title>
 <meta name="description" content="ร้านซ่อมไอโฟน ไอแพด แม็คบุค แอปเปิลวอช แอร์พอด และมือถือทุกรุ่น กำแพงเพชร เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน โดยช่างมืออาชีพประสบการณ์กว่า 10 ปี โทร 093-3068266">
+<meta name="keywords" content="ร้านซ่อมไอโฟน กำแพงเพชร, ซ่อมมือถือ กำแพงเพชร, เปลี่ยนจอไอโฟน, เปลี่ยนแบตเตอรี่, ปลดล็อครายเดือน, ซ่อมแม็คบุค, ซ่อมไอแพด, มือถือตกน้ำ">
+<meta name="robots" content="index, follow">
+<meta name="author" content="แบงค์เทเลคอมเซอร์วิส">
+<meta name="theme-color" content="#e11d3a">
+<meta name="geo.region" content="TH-62">
+<meta name="geo.placename" content="กำแพงเพชร">
+<link rel="canonical" href="https://www.banktelecomservice.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E%F0%9F%94%A7%3C/text%3E%3C/svg%3E">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:site_name" content="แบงค์เทเลคอมเซอร์วิส">
+<meta property="og:title" content="แบงค์เทเลคอมเซอร์วิส | ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร">
+<meta property="og:description" content="ศูนย์บริการซ่อมไอโฟน ไอแพด แม็คบุค และมือถือทุกรุ่น กำแพงเพชร เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน โดยช่างมืออาชีพประสบการณ์กว่า 10 ปี">
+<meta property="og:url" content="https://www.banktelecomservice.com/">
+<meta property="og:image" content="https://www.banktelecomservice.com/images/og-cover.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="แบงค์เทเลคอมเซอร์วิส | ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร">
+<meta name="twitter:description" content="ซ่อมไอโฟน ไอแพด แม็คบุค และมือถือทุกรุ่น กำแพงเพชร เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน โดยช่างมืออาชีพ">
+<meta name="twitter:image" content="https://www.banktelecomservice.com/images/og-cover.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -120,6 +141,7 @@
   .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
   .card:hover::after{transform:scaleX(1)}
   .card .ic{width:58px;height:58px;border-radius:15px;display:grid;place-items:center;font-size:1.7rem;margin-bottom:18px;background:linear-gradient(135deg,rgba(225,29,58,.1),rgba(255,106,61,.12));color:var(--brand)}
+  .card .ic svg{width:30px;height:30px;display:block}
   .card h3{font-size:1.22rem;margin-bottom:10px}
   .card p{color:var(--ink-soft);font-size:.95rem;margin-bottom:16px}
   .card ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
@@ -184,7 +206,55 @@
   .float a:hover{transform:scale(1.08)}
   .float .f-call{background:var(--brand);animation:pulse 2s infinite}
   .float .f-line{background:#06c755}
+  .float .f-fb{background:#1877f2}
+  .float .f-tiktok{background:#111}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(225,29,58,.5)}70%{box-shadow:0 0 0 16px rgba(225,29,58,0)}100%{box-shadow:0 0 0 0 rgba(225,29,58,0)}}
+
+  /* ---------- Gallery ---------- */
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .shot{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:var(--bg-soft);transition:.3s}
+  .shot:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 14px 11px;background:linear-gradient(transparent,rgba(15,23,41,.78));color:#fff;font-family:'Kanit';font-weight:500;font-size:.9rem}
+  .shot .ph{display:none}
+  .shot.empty{background:linear-gradient(135deg,#fff 0%,var(--bg-soft) 100%)}
+  .shot.empty img{display:none}
+  .shot.empty .ph{display:grid;place-items:center;width:100%;height:100%;color:var(--brand);opacity:.6}
+  .shot.empty .ph svg{width:46%;height:46%}
+  .shot.empty figcaption{background:rgba(15,23,41,.05);color:var(--ink-soft)}
+
+  /* ---------- Reviews ---------- */
+  .reviews{background:var(--bg-soft)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:42px}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .rev .stars{color:#ffb800;font-size:1.05rem;margin-bottom:14px;letter-spacing:3px}
+  .rev p{color:var(--ink);font-size:.95rem;margin-bottom:20px;flex:1}
+  .rev .who{display:flex;align-items:center;gap:12px}
+  .rev .av{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-family:'Kanit';font-weight:700;font-size:1.1rem;color:#fff;background:linear-gradient(135deg,var(--brand),#ff6a3d);flex-shrink:0}
+  .rev .who b{font-family:'Kanit';font-size:.95rem;display:block;line-height:1.3}
+  .rev .who small{color:var(--ink-soft);font-size:.8rem}
+  .google-cta{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 30px;box-shadow:var(--shadow);text-align:center}
+  .google-cta .score{font-family:'Kanit';font-weight:800;font-size:2.2rem;color:var(--ink);line-height:1}
+  .google-cta .score small{display:block;color:#ffb800;font-size:1rem;letter-spacing:2px;font-weight:400;margin-top:4px}
+  .google-cta .txt{text-align:left}
+  .google-cta .txt b{font-family:'Kanit';display:block}
+  .google-cta .txt span{color:var(--ink-soft);font-size:.88rem}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.25s}
+  .faq-item:hover{box-shadow:var(--shadow)}
+  .faq-item.open{border-color:var(--brand)}
+  .faq-q{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:21px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Kanit';font-weight:600;font-size:1.04rem;color:var(--ink)}
+  .faq-q .pm{flex-shrink:0;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--bg-soft);color:var(--brand);font-size:1.25rem;line-height:1;transition:.25s}
+  .faq-item.open .faq-q .pm{background:var(--brand);color:#fff;transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .faq-a p{padding:0 24px 22px;color:var(--ink-soft);font-size:.96rem}
+
+  /* ---------- Footer social ---------- */
+  .foot-social{display:flex;gap:12px;margin-top:18px}
+  .foot-social a{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:1.25rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#fff;transition:.25s}
+  .foot-social a:hover{transform:translateY(-3px);background:rgba(255,255,255,.16)}
 
   /* ---------- Responsive ---------- */
   @media(max-width:920px){
@@ -192,18 +262,85 @@
     .grid-cards{grid-template-columns:1fr 1fr}
     .why-grid{grid-template-columns:1fr 1fr}
     .steps-grid{grid-template-columns:1fr 1fr}
+    .gallery-grid{grid-template-columns:1fr 1fr}
+    .rev-grid{grid-template-columns:1fr}
     .foot-grid{grid-template-columns:1fr 1fr}
     .contact-grid{grid-template-columns:1fr}
-    .nav-links,.nav-phone{display:none}
+    .nav-phone{display:none}
+    .menu-btn{display:block;margin-left:6px}
+    .nav-links{
+      display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;
+      align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);
+      box-shadow:var(--shadow);padding:6px 22px 14px;
+    }
+    header.open .nav-links{display:flex}
+    .nav-links a{padding:14px 4px;font-size:1.05rem;border-bottom:1px solid var(--line)}
+    .nav-links a:last-child{border-bottom:0}
   }
   @media(max-width:560px){
     .section{padding:60px 0}
-    .grid-cards,.why-grid,.steps-grid,.foot-grid{grid-template-columns:1fr}
+    .grid-cards,.why-grid,.steps-grid,.foot-grid,.gallery-grid{grid-template-columns:1fr}
     .hero-stats{gap:22px}
     .cta{padding:40px 24px}
     .trust .wrap{justify-content:flex-start}
   }
 </style>
+
+<!-- Structured Data: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobilePhoneStore",
+  "name": "แบงค์เทเลคอมเซอร์วิส",
+  "description": "ศูนย์บริการซ่อมไอโฟน ไอแพด แม็คบุค แอปเปิลวอช แอร์พอด และมือถือทุกรุ่น กำแพงเพชร เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน",
+  "image": "https://www.banktelecomservice.com/images/shop-front.jpg",
+  "url": "https://www.banktelecomservice.com/",
+  "telephone": "+66933068266",
+  "priceRange": "฿฿",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "เซเว่นบ้านใหม่–ท่าขุนราม",
+    "addressLocality": "เมืองกำแพงเพชร",
+    "addressRegion": "กำแพงเพชร",
+    "postalCode": "62000",
+    "addressCountry": "TH"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "sameAs": [
+    "https://www.facebook.com/banktelecomservice",
+    "https://www.tiktok.com/@banktelecom"
+  ],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"เปลี่ยนจอไอโฟน–ลอกกระจก"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"เปลี่ยนแบตเตอรี่มือถือ"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"ปลดล็อครายเดือน"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"ซ่อมบอร์ด–เครื่องตกน้ำ"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"ซ่อมแม็คบุค MacBook"}}
+  ]
+}
+</script>
+
+<!-- Structured Data: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"จอไอโฟนแตก ซ่อมใช้เวลานานไหม?","acceptedAnswer":{"@type":"Answer","text":"ส่วนใหญ่เปลี่ยนจอไอโฟนเสร็จภายใน 30–60 นาที รอรับได้เลย ขึ้นอยู่กับรุ่นและสต็อกอะไหล่ ทางร้านแจ้งราคาก่อนซ่อมทุกครั้ง โทรเช็คราคาตามรุ่นได้ที่ 093-3068266"}},
+    {"@type":"Question","name":"แบตเตอรี่บวม อันตรายไหม ต้องรีบเปลี่ยนเลยหรือเปล่า?","acceptedAnswer":{"@type":"Answer","text":"แบตบวมควรรีบเปลี่ยนโดยเร็ว เพราะเสี่ยงดันจอเสียหายและอาจรั่วหรือลุกไหม้ได้ ไม่ควรใช้งานหรือชาร์จต่อ นำเครื่องเข้ามาเปลี่ยนแบตคุณภาพได้ทันที"}},
+    {"@type":"Question","name":"โทรศัพท์ตกน้ำ เปิดไม่ติด ยังซ่อมได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"มีโอกาสซ่อมได้ สำคัญคืออย่าเปิดเครื่องและอย่าชาร์จ รีบนำเข้าร้านให้เร็วที่สุดเพื่อล้างบอร์ดก่อนเกิดสนิม ยิ่งเร็วยิ่งมีโอกาสรอดสูง"}},
+    {"@type":"Question","name":"เครื่องติดล็อครายเดือน หรือติด iCloud ปลดได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"ปลดล็อครายเดือนได้หลายยี่ห้อ ทั้ง iPhone, OPPO, VIVO, Samsung และอื่นๆ แนะนำให้โทรแจ้งรุ่นและอาการก่อน ทางร้านจะประเมินว่าทำได้และใช้เวลาเท่าไหร่"}},
+    {"@type":"Question","name":"ใช้จอแท้กับจอเทียบต่างกันอย่างไร เลือกแบบไหนดี?","acceptedAnswer":{"@type":"Answer","text":"จอแท้ให้สีและการสัมผัสตรงตามเครื่องเดิมและทนกว่า ส่วนจอเทียบราคาประหยัดกว่า ทางร้านมีให้เลือกทั้งสองแบบพร้อมอธิบายข้อดีข้อจำกัด เพื่อให้เหมาะกับงบและการใช้งาน"}},
+    {"@type":"Question","name":"ซ่อมแล้วมีรับประกันไหม?","acceptedAnswer":{"@type":"Answer","text":"งานซ่อมมีรับประกัน เช่น เปลี่ยนจอและเปลี่ยนแบต หากมีปัญหาจากอะไหล่ภายในระยะประกันสามารถนำกลับมาเคลมได้ สอบถามเงื่อนไขตามแต่ละงานได้ที่หน้าร้าน"}},
+    {"@type":"Question","name":"ไม่ได้อยู่กำแพงเพชร ส่งเครื่องมาซ่อมทางไปรษณีย์ได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"ได้ ลูกค้าต่างจังหวัดสามารถส่งเครื่องมาซ่อมได้ ทักไลน์ banktelecom เพื่อแจ้งอาการและสอบถามขั้นตอนการส่งและค่าบริการก่อนได้เลย"}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -217,13 +354,15 @@
     <nav class="nav-links">
       <a href="#services">บริการซ่อม</a>
       <a href="#why">ทำไมต้องเรา</a>
-      <a href="#brands">ยี่ห้อที่รับ</a>
-      <a href="#steps">ขั้นตอน</a>
+      <a href="#gallery">ผลงาน</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#faq">คำถามบ่อย</a>
       <a href="#contact">ติดต่อ</a>
     </nav>
     <div class="nav-cta">
       <span class="nav-phone">📞 093-3068266</span>
       <a href="#contact" class="btn btn-primary" style="padding:11px 22px">นัดซ่อม</a>
+      <button class="menu-btn" id="menuBtn" aria-label="เมนู" aria-expanded="false">☰</button>
     </div>
   </div>
 </header>
@@ -278,37 +417,37 @@
     </div>
     <div class="grid-cards">
       <div class="card">
-        <div class="ic">📱</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 5h3"/><path d="M9 8.5l2.5 2.5-1.8 1.8L13 16"/></svg></div>
         <h3>เปลี่ยนจอ–ลอกกระจก</h3>
         <p>จอแตก จอเป็นเส้น ทัชไม่ติด เปลี่ยนจอแท้และจอคุณภาพ พร้อมบริการลอกกระจกไอโฟน</p>
         <ul><li>จอไอโฟน</li><li>จอไอแพด</li><li>เปลี่ยนจอแท้</li><li>ลอกจอ</li></ul>
       </div>
       <div class="card">
-        <div class="ic">🔋</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="17" height="10" rx="2.5"/><path d="M22 10.5v3"/><path d="M11 9.5l-2 3h3l-2 3"/></svg></div>
         <h3>เปลี่ยนแบตเตอรี่</h3>
         <p>แบตเสื่อม แบตบวม เครื่องร้อน ดับเอง เปลี่ยนแบตคุณภาพให้เครื่องกลับมาใช้ได้เต็มวัน</p>
         <ul><li>แบตไอโฟน</li><li>แบตไอแพด</li><li>แบตแอร์พอด</li></ul>
       </div>
       <div class="card">
-        <div class="ic">🔓</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 7.5-1.9"/><circle cx="12" cy="15.5" r="1.4"/></svg></div>
         <h3>ปลดล็อครายเดือน</h3>
         <p>เครื่องติดล็อครายเดือน ติด iCloud ปลดล็อคให้ใช้งานได้ตามปกติ รองรับหลายยี่ห้อ</p>
         <ul><li>ติดรายเดือน</li><li>iCloud</li><li>OPPO/VIVO</li><li>Samsung</li></ul>
       </div>
       <div class="card">
-        <div class="ic">⌚</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="3"/><path d="M9 7l.8-3h4.4L15 7"/><path d="M9 17l.8 3h4.4l.8-3"/></svg></div>
         <h3>Apple Watch & AirPods</h3>
         <p>เปลี่ยนจอกระจก Apple Watch ที่แตก ซ่อมหูฟัง AirPods แบตเสื่อม แบตหมดเร็ว</p>
         <ul><li>จอ Apple Watch</li><li>ซ่อม AirPods</li><li>เปลี่ยนแบต</li></ul>
       </div>
       <div class="card">
-        <div class="ic">💧</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 10.5a6 6 0 0 1-12 0C6 9.4 12 3 12 3z"/><path d="M9.5 13.5a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
         <h3>ซ่อมบอร์ด–เครื่องตกน้ำ</h3>
         <p>เปิดไม่ติด เครื่องตกน้ำ กล้องสั่น เสียงไม่ดัง ไวไฟใช้ไม่ได้ ซ่อมระดับบอร์ดโดยช่างเฉพาะทาง</p>
         <ul><li>ตกน้ำ</li><li>เปิดไม่ติด</li><li>ฝาหลังแตก</li><li>กล้อง</li></ul>
       </div>
       <div class="card">
-        <div class="ic">💻</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="10" rx="1.5"/><path d="M2.5 18h19l-1.3 1.6a2 2 0 0 1-1.5.7H5.3a2 2 0 0 1-1.5-.7z"/></svg></div>
         <h3>ซ่อมแม็คบุค MacBook</h3>
         <p>เครื่องช้า เปิดไม่ติด จอเสีย เปลี่ยนแบต ดูแลซ่อมแม็คบุคทุกรุ่นโดยทีมงานมืออาชีพ</p>
         <ul><li>MacBook</li><li>เปลี่ยนแบต</li><li>ลงเครื่อง</li></ul>
@@ -356,6 +495,82 @@
   </div>
 </section>
 
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ผลงานของเรา</span>
+      <h2>ตัวอย่างงานซ่อม & หน้าร้าน</h2>
+      <p>ภาพงานซ่อมจริงและบรรยากาศหน้าร้าน เพื่อความมั่นใจก่อนนำเครื่องมาซ่อม</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="shot">
+        <img src="images/shop-front.jpg" alt="หน้าร้านแบงค์เทเลคอมเซอร์วิส กำแพงเพชร" loading="lazy" onerror="this.closest('.shot').classList.add('empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-4.5h15L21 9"/><path d="M3 9v0a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 4 0 2.5 2.5 0 0 0 4 0 2.5 2.5 0 0 0 5 0"/><path d="M5 11v9h14v-9"/><path d="M9 20v-5h4v5"/></svg></div>
+        <figcaption>หน้าร้าน</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="images/work-screen.jpg" alt="ผลงานเปลี่ยนจอไอโฟน" loading="lazy" onerror="this.closest('.shot').classList.add('empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 5h3"/><path d="M9 8.5l2.5 2.5-1.8 1.8L13 16"/></svg></div>
+        <figcaption>เปลี่ยนจอไอโฟน</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="images/work-battery.jpg" alt="ผลงานเปลี่ยนแบตเตอรี่" loading="lazy" onerror="this.closest('.shot').classList.add('empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="17" height="10" rx="2.5"/><path d="M22 10.5v3"/><path d="M11 9.5l-2 3h3l-2 3"/></svg></div>
+        <figcaption>เปลี่ยนแบตเตอรี่</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="images/work-board.jpg" alt="ผลงานซ่อมบอร์ดมือถือ" loading="lazy" onerror="this.closest('.shot').classList.add('empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M12 2v4M15 2v4M9 18v4M12 18v4M15 18v4M2 9h4M2 12h4M2 15h4M18 9h4M18 12h4M18 15h4"/></svg></div>
+        <figcaption>ซ่อมบอร์ด</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="images/work-macbook.jpg" alt="ผลงานซ่อมแม็คบุค" loading="lazy" onerror="this.closest('.shot').classList.add('empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="10" rx="1.5"/><path d="M2.5 18h19l-1.3 1.6a2 2 0 0 1-1.5.7H5.3a2 2 0 0 1-1.5-.7z"/></svg></div>
+        <figcaption>ซ่อมแม็คบุค</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="images/work-watch.jpg" alt="ผลงานเปลี่ยนจอ Apple Watch" loading="lazy" onerror="this.closest('.shot').classList.add('empty')">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="3"/><path d="M9 7l.8-3h4.4L15 7"/><path d="M9 17l.8 3h4.4l.8-3"/></svg></div>
+        <figcaption>เปลี่ยนจอ Apple Watch</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">เสียงจากลูกค้า</span>
+      <h2>ลูกค้าไว้วางใจให้เราดูแล</h2>
+      <p>รีวิวจริงจากลูกค้าที่ใช้บริการซ่อมกับแบงค์เทเลคอมเซอร์วิส</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>จอไอโฟนแตกมาก เปลี่ยนให้ไวมาก รอรับได้เลย ราคาก็โอเค ช่างอธิบายอาการละเอียดดีครับ</p>
+        <div class="who"><span class="av">ส</span><div><b>คุณสมชาย</b><small>เปลี่ยนจอ iPhone</small></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>แบตบวมมานานมาก ร้านเปลี่ยนให้เรียบร้อย เครื่องใช้ได้ทั้งวันเหมือนใหม่ ประทับใจค่ะ</p>
+        <div class="who"><span class="av">ก</span><div><b>คุณกานดา</b><small>เปลี่ยนแบตเตอรี่</small></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>เครื่องตกน้ำเปิดไม่ติด นึกว่าจบแล้ว แต่ช่างซ่อมบอร์ดให้กลับมาใช้ได้ เก่งจริง แนะนำเลยครับ</p>
+        <div class="who"><span class="av">ธ</span><div><b>คุณธนา</b><small>ซ่อมบอร์ด–ตกน้ำ</small></div></div>
+      </div>
+    </div>
+    <div class="google-cta">
+      <div class="score">5.0<small>★★★★★</small></div>
+      <div class="txt"><b>รีวิวจากลูกค้าจริงบน Google</b><span>อ่านรีวิวทั้งหมด หรือร่วมรีวิวให้กำลังใจเราได้เลย</span></div>
+      <a href="https://www.google.com/search?q=แบงค์เทเลคอมเซอร์วิส+กำแพงเพชร" target="_blank" rel="noopener" class="btn btn-primary">⭐ ดูรีวิว Google</a>
+    </div>
+  </div>
+</section>
+
 <!-- STEPS -->
 <section class="section" id="steps" style="background:var(--bg-soft)">
   <div class="wrap">
@@ -368,6 +583,47 @@
       <div class="step"><div class="n">2</div><h3>ประเมินราคา</h3><p>ช่างตรวจเช็คและแจ้งราคาก่อนซ่อม</p></div>
       <div class="step"><div class="n">3</div><h3>ซ่อมโดยช่าง</h3><p>ดำเนินการซ่อมด้วยอะไหล่คุณภาพ</p></div>
       <div class="step"><div class="n">4</div><h3>รับเครื่อง</h3><p>ทดสอบการใช้งาน พร้อมรับประกัน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">คำถามที่พบบ่อย</span>
+      <h2>เรื่องที่ลูกค้าถามบ่อย</h2>
+      <p>รวมคำตอบสำหรับปัญหายอดฮิตก่อนนำเครื่องมาซ่อม ถ้าไม่เจอคำตอบ โทรหรือทักไลน์สอบถามได้เลย</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">จอไอโฟนแตก ซ่อมใช้เวลานานไหม?<span class="pm">+</span></button>
+        <div class="faq-a"><p>ส่วนใหญ่เปลี่ยนจอไอโฟนเสร็จภายใน 30–60 นาที รอรับได้เลย ขึ้นอยู่กับรุ่นและสต็อกอะไหล่ ทางร้านแจ้งราคาก่อนซ่อมทุกครั้ง โทรเช็คราคาตามรุ่นได้ที่ 093-3068266</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">แบตเตอรี่บวม อันตรายไหม ต้องรีบเปลี่ยนเลยหรือเปล่า?<span class="pm">+</span></button>
+        <div class="faq-a"><p>แบตบวมควรรีบเปลี่ยนโดยเร็ว เพราะเสี่ยงดันจอเสียหายและอาจรั่วหรือลุกไหม้ได้ ไม่ควรใช้งานหรือชาร์จต่อ นำเครื่องเข้ามาเปลี่ยนแบตคุณภาพได้ทันที</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">โทรศัพท์ตกน้ำ เปิดไม่ติด ยังซ่อมได้ไหม?<span class="pm">+</span></button>
+        <div class="faq-a"><p>มีโอกาสซ่อมได้ สำคัญคือ "อย่าเปิดเครื่องและอย่าชาร์จ" รีบนำเข้าร้านให้เร็วที่สุดเพื่อล้างบอร์ดก่อนเกิดสนิม ยิ่งเร็วยิ่งมีโอกาสรอดสูง</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">เครื่องติดล็อครายเดือน หรือติด iCloud ปลดได้ไหม?<span class="pm">+</span></button>
+        <div class="faq-a"><p>ปลดล็อครายเดือนได้หลายยี่ห้อ ทั้ง iPhone, OPPO, VIVO, Samsung และอื่นๆ แนะนำให้โทรแจ้งรุ่นและอาการก่อน ทางร้านจะประเมินว่าทำได้และใช้เวลาเท่าไหร่</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">ใช้จอแท้กับจอเทียบต่างกันอย่างไร เลือกแบบไหนดี?<span class="pm">+</span></button>
+        <div class="faq-a"><p>จอแท้ให้สีและการสัมผัสตรงตามเครื่องเดิมและทนกว่า ส่วนจอเทียบราคาประหยัดกว่า ทางร้านมีให้เลือกทั้งสองแบบพร้อมอธิบายข้อดีข้อจำกัด เพื่อให้เหมาะกับงบและการใช้งาน</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">ซ่อมแล้วมีรับประกันไหม?<span class="pm">+</span></button>
+        <div class="faq-a"><p>งานซ่อมมีรับประกัน เช่น เปลี่ยนจอและเปลี่ยนแบต หากมีปัญหาจากอะไหล่ภายในระยะประกันสามารถนำกลับมาเคลมได้ สอบถามเงื่อนไขตามแต่ละงานได้ที่หน้าร้าน</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">ไม่ได้อยู่กำแพงเพชร ส่งเครื่องมาซ่อมทางไปรษณีย์ได้ไหม?<span class="pm">+</span></button>
+        <div class="faq-a"><p>ได้ ลูกค้าต่างจังหวัดสามารถส่งเครื่องมาซ่อมได้ ทักไลน์ banktelecom เพื่อแจ้งอาการและสอบถามขั้นตอนการส่งและค่าบริการก่อนได้เลย</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -400,10 +656,10 @@
         <div class="row"><span class="ic">📞</span><div><b>โทรศัพท์</b><span>093-3068266 , 092-9622829</span></div></div>
         <div class="row"><span class="ic">💬</span><div><b>Line</b><span>banktelecom</span></div></div>
         <div class="row"><span class="ic">📍</span><div><b>ที่ตั้งร้าน</b><span>เซเว่นบ้านใหม่–ท่าขุนราม อ.เมือง จ.กำแพงเพชร</span></div></div>
-        <div class="row"><span class="ic">🕘</span><div><b>เวลาทำการ</b><span>เปิดบริการทุกวัน (โทรสอบถามเวลาก่อนเข้าร้าน)</span></div></div>
+        <div class="row"><span class="ic">🕘</span><div><b>เวลาทำการ</b><span>เปิดบริการทุกวัน 09:00 – 19:00 น.</span></div></div>
       </div>
       <div class="map-card">
-        <iframe src="https://www.google.com/maps?q=%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%81%E0%B8%B3%E0%B9%81%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps?q=%E0%B9%81%E0%B8%9A%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B9%80%E0%B8%97%E0%B9%80%E0%B8%A5%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%8B%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%AA%20%E0%B8%81%E0%B8%B3%E0%B9%81%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="แผนที่ร้านแบงค์เทเลคอมเซอร์วิส"></iframe>
       </div>
     </div>
   </div>
@@ -416,6 +672,11 @@
       <div>
         <a href="#home" class="brand"><span class="logo">🔧</span><span style="color:#fff">แบงค์เทเลคอมเซอร์วิส</span></a>
         <p>ศูนย์บริการซ่อมไอโฟน ไอแพด แม็คบุค และมือถือทุกรุ่น กำแพงเพชร เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน โดยช่างมืออาชีพประสบการณ์กว่า 10 ปี</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/banktelecomservice" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">📘</a>
+          <a href="https://www.tiktok.com/@banktelecom" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">🎵</a>
+          <a href="https://line.me/ti/p/~banktelecom" target="_blank" rel="noopener" title="Line" aria-label="Line">💬</a>
+        </div>
       </div>
       <div>
         <h4>บริการ</h4>
@@ -436,7 +697,7 @@
         </ul>
       </div>
     </div>
-    <div class="foot-bottom">© 2024 แบงค์เทเลคอมเซอร์วิส • ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร</div>
+    <div class="foot-bottom">© <span id="year">2026</span> แบงค์เทเลคอมเซอร์วิส • ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร</div>
   </div>
 </footer>
 
@@ -444,7 +705,41 @@
 <div class="float">
   <a href="tel:0933068266" class="f-call" title="โทร">📞</a>
   <a href="https://line.me/ti/p/~banktelecom" class="f-line" title="Line">💬</a>
+  <a href="https://www.facebook.com/banktelecomservice" class="f-fb" target="_blank" rel="noopener" title="Facebook">📘</a>
+  <a href="https://www.tiktok.com/@banktelecom" class="f-tiktok" target="_blank" rel="noopener" title="TikTok">🎵</a>
 </div>
+
+<!-- SCRIPT -->
+<script>
+  (function(){
+    var header=document.querySelector('header');
+    var btn=document.getElementById('menuBtn');
+    btn.addEventListener('click',function(){
+      var open=header.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+      btn.textContent=open?'✕':'☰';
+    });
+    document.querySelectorAll('.nav-links a').forEach(function(a){
+      a.addEventListener('click',function(){
+        header.classList.remove('open');
+        btn.setAttribute('aria-expanded',false);
+        btn.textContent='☰';
+      });
+    });
+    var y=document.getElementById('year');
+    if(y){y.textContent=new Date().getFullYear();}
+
+    document.querySelectorAll('.faq-q').forEach(function(q){
+      q.addEventListener('click',function(){
+        var item=q.parentElement;
+        var ans=q.nextElementSibling;
+        var isOpen=item.classList.toggle('open');
+        q.querySelector('.pm').textContent=isOpen?'+':'+';
+        ans.style.maxHeight=isOpen?ans.scrollHeight+'px':'0';
+      });
+    });
+  })();
+</script>
 
 </body>
 </html>
