@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>แบงค์เทเลคอมเซอร์วิส | ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร</title>
 <meta name="description" content="ร้านซ่อมไอโฟน ไอแพด แม็คบุค แอปเปิลวอช แอร์พอด และมือถือทุกรุ่น กำแพงเพชร เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน โดยช่างมืออาชีพประสบการณ์กว่า 10 ปี โทร 093-3068266">
+<meta name="theme-color" content="#e11d3a">
+<link rel="canonical" href="https://www.banktelecomservice.com/">
+
+<!-- Open Graph / Line / Facebook share -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:site_name" content="แบงค์เทเลคอมเซอร์วิส">
+<meta property="og:title" content="แบงค์เทเลคอมเซอร์วิส | ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร">
+<meta property="og:description" content="ศูนย์ซ่อมไอโฟน ไอแพด แม็คบุค และมือถือทุกรุ่น เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน รีวิว 4.8★ ประสบการณ์กว่า 10 ปี โทร 093-3068266">
+<meta property="og:url" content="https://www.banktelecomservice.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon (inline SVG, ไม่ต้องมีไฟล์แยก) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e11d3a'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='white'%3E%F0%9F%94%A7%3C/text%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -73,7 +88,12 @@
   .nav-links a:hover{color:var(--brand)}
   .nav-cta{display:flex;align-items:center;gap:12px}
   .nav-phone{display:flex;align-items:center;gap:9px;font-family:'Kanit';font-weight:700;color:var(--brand);font-size:1.05rem}
-  .menu-btn{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--ink)}
+  .menu-btn{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--ink);line-height:1}
+  .mobile-menu{display:none;flex-direction:column;border-top:1px solid var(--line);background:#fff;padding:10px 22px 18px}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{font-family:'Kanit';font-weight:500;color:var(--ink);padding:13px 4px;border-bottom:1px solid var(--line)}
+  .mobile-menu a:last-child{border-bottom:0}
+  .mobile-menu .mm-call{color:var(--brand);font-weight:700;margin-top:8px}
 
   /* ---------- Hero ---------- */
   .hero{position:relative;background:linear-gradient(165deg,#0f1729 0%,#1c2541 55%,#2a1020 100%);color:#fff;overflow:hidden;padding:90px 0 100px}
@@ -100,6 +120,18 @@
   .mini{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:16px;transition:.25s}
   .mini:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
   .mini .ic{font-size:1.6rem;margin-bottom:8px}
+
+  /* ---------- SVG icons ---------- */
+  .ico{display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .ico .fill{fill:currentColor;stroke:none;opacity:.16}
+  .card .ic .ico{width:30px;height:30px}
+  .why-item .ic{color:#fff}
+  .why-item .ic .ico{width:32px;height:32px}
+  .why-item .ic .ico .fill{opacity:.25}
+  .price-card .ic{color:var(--brand)}
+  .price-card .ic .ico{width:40px;height:40px;margin:0 auto}
+  .mini .ic{display:flex}
+  .mini .ic .ico{width:26px;height:26px}
   .mini b{font-family:'Kanit';font-weight:600;font-size:.97rem;display:block}
   .mini span{font-size:.78rem;color:rgba(255,255,255,.6)}
 
@@ -140,6 +172,26 @@
   .chip{font-family:'Kanit';font-weight:600;font-size:1.05rem;padding:12px 26px;border-radius:14px;background:#fff;border:1px solid var(--line);color:var(--ink);transition:.25s}
   .chip:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-3px);box-shadow:var(--shadow)}
 
+  /* ---------- Prices ---------- */
+  .price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .price-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px;text-align:center;transition:.3s}
+  .price-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--brand)}
+  .price-card .ic{font-size:2rem;margin-bottom:12px}
+  .price-card h3{font-size:1.05rem;margin-bottom:12px}
+  .price-card .price{font-family:'Prompt';font-size:.92rem;color:var(--ink-soft)}
+  .price-card .price b{font-family:'Kanit';font-size:1.5rem;color:var(--brand);display:block;margin-top:2px}
+  .price-card span{font-size:.8rem;color:var(--ink-soft)}
+  .price-note{text-align:center;margin-top:24px;color:var(--ink-soft);font-size:.9rem;background:var(--bg-soft);border:1px dashed var(--line);border-radius:12px;padding:12px 18px}
+
+  /* ---------- Reviews ---------- */
+  .reviews{background:var(--bg-soft)}
+  .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .review-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;transition:.3s}
+  .review-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .review-card .stars{color:#ffb02e;font-size:1.2rem;letter-spacing:2px;margin-bottom:12px}
+  .review-card p{color:var(--ink);font-size:.96rem;margin-bottom:14px}
+  .review-card b{font-family:'Kanit';color:var(--ink-soft);font-size:.88rem}
+
   /* ---------- Steps ---------- */
   .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
   .step{text-align:center;position:relative}
@@ -155,6 +207,29 @@
   .cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
   .cta .btn-primary{background:#fff;color:var(--brand)}
   .cta .btn-primary:hover{background:#fff;filter:brightness(.96)}
+
+  /* ---------- Article / SEO ---------- */
+  .article{background:var(--bg-soft)}
+  .article-wrap{max-width:860px}
+  .prose{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:40px 44px;box-shadow:var(--shadow)}
+  .prose h3{font-size:1.4rem;color:var(--brand);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line)}
+  .prose h3:first-child{margin-top:0;padding-top:0;border-top:0}
+  .prose h4{font-family:'Kanit';font-weight:600;font-size:1.08rem;color:var(--ink);margin:20px 0 8px}
+  .prose p{color:var(--ink-soft);margin-bottom:14px;font-size:1rem}
+  .prose ul{margin:0 0 16px 0;padding-left:20px;color:var(--ink-soft)}
+  .prose ul li{margin-bottom:7px}
+  .prose strong{color:var(--ink);font-weight:600}
+  .prose .lead{font-size:1.08rem;color:var(--ink)}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.25s}
+  .faq-item[open]{box-shadow:var(--shadow);border-color:var(--brand)}
+  .faq-item summary{font-family:'Kanit';font-weight:600;font-size:1.05rem;padding:20px 24px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:"+";font-size:1.5rem;color:var(--brand);transition:.25s;flex-shrink:0}
+  .faq-item[open] summary::after{transform:rotate(45deg)}
+  .faq-item .faq-a{padding:0 24px 22px;color:var(--ink-soft);font-size:.97rem;line-height:1.7}
 
   /* ---------- Contact ---------- */
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
@@ -192,13 +267,16 @@
     .grid-cards{grid-template-columns:1fr 1fr}
     .why-grid{grid-template-columns:1fr 1fr}
     .steps-grid{grid-template-columns:1fr 1fr}
+    .price-grid{grid-template-columns:1fr 1fr}
+    .review-grid{grid-template-columns:1fr}
     .foot-grid{grid-template-columns:1fr 1fr}
     .contact-grid{grid-template-columns:1fr}
-    .nav-links,.nav-phone{display:none}
+    .nav-links,.nav-phone,.nav-cta .btn{display:none}
+    .menu-btn{display:block}
   }
   @media(max-width:560px){
     .section{padding:60px 0}
-    .grid-cards,.why-grid,.steps-grid,.foot-grid{grid-template-columns:1fr}
+    .grid-cards,.why-grid,.steps-grid,.price-grid,.foot-grid{grid-template-columns:1fr}
     .hero-stats{gap:22px}
     .cta{padding:40px 24px}
     .trust .wrap{justify-content:flex-start}
@@ -206,6 +284,20 @@
 </style>
 </head>
 <body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-screen" viewBox="0 0 24 24"><rect class="fill" x="6" y="2" width="12" height="20" rx="2.5"/><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 6l2.2 3.4-2 1 2.8 3.6"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect class="fill" x="3" y="8" width="16" height="9" rx="2"/><rect x="3" y="8" width="16" height="9" rx="2"/><path d="M21 11.2v2.6"/><path d="M11 9.8l-2.2 3.2H11l-.5 2.5"/></symbol>
+  <symbol id="i-unlock" viewBox="0 0 24 24"><rect class="fill" x="5" y="11" width="14" height="10" rx="2"/><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8.5 11V7.2A3.6 3.6 0 0 1 15.4 6"/><circle cx="12" cy="15.6" r="1.4"/><path d="M12 17v1.8"/></symbol>
+  <symbol id="i-watch" viewBox="0 0 24 24"><rect class="fill" x="7" y="6" width="10" height="12" rx="3"/><rect x="7" y="6" width="10" height="12" rx="3"/><path d="M9 6l.9-3h4.2L15 6"/><path d="M9 18l.9 3h4.2l.9-3"/><path d="M12 9.5v3l1.8 1"/></symbol>
+  <symbol id="i-water" viewBox="0 0 24 24"><path class="fill" d="M12 3.2s6 6.4 6 10.3a6 6 0 0 1-12 0C6 9.6 12 3.2 12 3.2z"/><path d="M12 3.2s6 6.4 6 10.3a6 6 0 0 1-12 0C6 9.6 12 3.2 12 3.2z"/><path d="M9.4 13.8a2.6 2.6 0 0 0 2.6 2.6"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect class="fill" x="4" y="5" width="16" height="11" rx="1.6"/><rect x="4" y="5" width="16" height="11" rx="1.6"/><path d="M2 19.2h20"/><path d="M10 19.2h4"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle class="fill" cx="12" cy="9" r="5.2"/><circle cx="12" cy="9" r="5.2"/><path d="M8.8 13.2L7.7 21l4.3-2.2L16.3 21l-1.1-7.8"/><path d="M12 6.6l.9 1.8 2 .3-1.45 1.4.35 2L12 12.1l-1.8.95.35-2L9.1 9.7l2-.3z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle class="fill" cx="11" cy="11" r="6"/><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.6-4.6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path class="fill" d="M12 3l7 3v5c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V6z"/><path d="M12 3l7 3v5c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V6z"/><path d="M9 12l2.2 2.2L15.2 10"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path class="fill" d="M13 2L4 14h6l-1 8 9-12h-6z"/><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></symbol>
+</svg>
 
 <!-- HEADER -->
 <header>
@@ -218,14 +310,25 @@
       <a href="#services">บริการซ่อม</a>
       <a href="#why">ทำไมต้องเรา</a>
       <a href="#brands">ยี่ห้อที่รับ</a>
-      <a href="#steps">ขั้นตอน</a>
+      <a href="#articles">บทความ</a>
       <a href="#contact">ติดต่อ</a>
     </nav>
     <div class="nav-cta">
       <span class="nav-phone">📞 093-3068266</span>
       <a href="#contact" class="btn btn-primary" style="padding:11px 22px">นัดซ่อม</a>
     </div>
+    <button class="menu-btn" id="menuBtn" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
   </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#services">บริการซ่อม</a>
+    <a href="#why">ทำไมต้องเรา</a>
+    <a href="#prices">ราคาเริ่มต้น</a>
+    <a href="#brands">ยี่ห้อที่รับ</a>
+    <a href="#articles">บทความ</a>
+    <a href="#faq">คำถามบ่อย</a>
+    <a href="#contact">ติดต่อ</a>
+    <a href="tel:0933068266" class="mm-call">📞 โทร 093-3068266</a>
+  </nav>
 </header>
 
 <!-- HERO -->
@@ -240,19 +343,19 @@
         <a href="https://line.me/ti/p/~banktelecom" class="btn btn-line">💬 แชทไลน์ banktelecom</a>
       </div>
       <div class="hero-stats">
+        <div><div class="num">4.8★</div><div class="lbl">รีวิว Google (110)</div></div>
         <div><div class="num">10+</div><div class="lbl">ปีประสบการณ์</div></div>
         <div><div class="num">ทุกรุ่น</div><div class="lbl">iPhone • Android</div></div>
-        <div><div class="num">รับประกัน</div><div class="lbl">งานซ่อมทุกชิ้น</div></div>
       </div>
     </div>
     <div class="hero-card">
       <h3>บริการยอดนิยม</h3>
       <p class="sub">เลือกอาการเสียที่ต้องการซ่อม</p>
       <div class="mini-grid">
-        <div class="mini"><div class="ic">📱</div><b>เปลี่ยนจอ</b><span>จอแตก / เป็นเส้น</span></div>
-        <div class="mini"><div class="ic">🔋</div><b>เปลี่ยนแบต</b><span>แบตเสื่อม / บวม</span></div>
-        <div class="mini"><div class="ic">🔓</div><b>ปลดล็อค</b><span>เครื่องติดรายเดือน</span></div>
-        <div class="mini"><div class="ic">💧</div><b>เครื่องตกน้ำ</b><span>เปิดไม่ติด</span></div>
+        <div class="mini"><div class="ic"><svg class="ico"><use href="#i-screen"/></svg></div><b>เปลี่ยนจอ</b><span>จอแตก / เป็นเส้น</span></div>
+        <div class="mini"><div class="ic"><svg class="ico"><use href="#i-battery"/></svg></div><b>เปลี่ยนแบต</b><span>แบตเสื่อม / บวม</span></div>
+        <div class="mini"><div class="ic"><svg class="ico"><use href="#i-unlock"/></svg></div><b>ปลดล็อค</b><span>เครื่องติดรายเดือน</span></div>
+        <div class="mini"><div class="ic"><svg class="ico"><use href="#i-water"/></svg></div><b>เครื่องตกน้ำ</b><span>เปิดไม่ติด</span></div>
       </div>
     </div>
   </div>
@@ -278,37 +381,37 @@
     </div>
     <div class="grid-cards">
       <div class="card">
-        <div class="ic">📱</div>
+        <div class="ic"><svg class="ico"><use href="#i-screen"/></svg></div>
         <h3>เปลี่ยนจอ–ลอกกระจก</h3>
         <p>จอแตก จอเป็นเส้น ทัชไม่ติด เปลี่ยนจอแท้และจอคุณภาพ พร้อมบริการลอกกระจกไอโฟน</p>
         <ul><li>จอไอโฟน</li><li>จอไอแพด</li><li>เปลี่ยนจอแท้</li><li>ลอกจอ</li></ul>
       </div>
       <div class="card">
-        <div class="ic">🔋</div>
+        <div class="ic"><svg class="ico"><use href="#i-battery"/></svg></div>
         <h3>เปลี่ยนแบตเตอรี่</h3>
         <p>แบตเสื่อม แบตบวม เครื่องร้อน ดับเอง เปลี่ยนแบตคุณภาพให้เครื่องกลับมาใช้ได้เต็มวัน</p>
         <ul><li>แบตไอโฟน</li><li>แบตไอแพด</li><li>แบตแอร์พอด</li></ul>
       </div>
       <div class="card">
-        <div class="ic">🔓</div>
+        <div class="ic"><svg class="ico"><use href="#i-unlock"/></svg></div>
         <h3>ปลดล็อครายเดือน</h3>
         <p>เครื่องติดล็อครายเดือน ติด iCloud ปลดล็อคให้ใช้งานได้ตามปกติ รองรับหลายยี่ห้อ</p>
         <ul><li>ติดรายเดือน</li><li>iCloud</li><li>OPPO/VIVO</li><li>Samsung</li></ul>
       </div>
       <div class="card">
-        <div class="ic">⌚</div>
+        <div class="ic"><svg class="ico"><use href="#i-watch"/></svg></div>
         <h3>Apple Watch & AirPods</h3>
         <p>เปลี่ยนจอกระจก Apple Watch ที่แตก ซ่อมหูฟัง AirPods แบตเสื่อม แบตหมดเร็ว</p>
         <ul><li>จอ Apple Watch</li><li>ซ่อม AirPods</li><li>เปลี่ยนแบต</li></ul>
       </div>
       <div class="card">
-        <div class="ic">💧</div>
+        <div class="ic"><svg class="ico"><use href="#i-water"/></svg></div>
         <h3>ซ่อมบอร์ด–เครื่องตกน้ำ</h3>
         <p>เปิดไม่ติด เครื่องตกน้ำ กล้องสั่น เสียงไม่ดัง ไวไฟใช้ไม่ได้ ซ่อมระดับบอร์ดโดยช่างเฉพาะทาง</p>
         <ul><li>ตกน้ำ</li><li>เปิดไม่ติด</li><li>ฝาหลังแตก</li><li>กล้อง</li></ul>
       </div>
       <div class="card">
-        <div class="ic">💻</div>
+        <div class="ic"><svg class="ico"><use href="#i-laptop"/></svg></div>
         <h3>ซ่อมแม็คบุค MacBook</h3>
         <p>เครื่องช้า เปิดไม่ติด จอเสีย เปลี่ยนแบต ดูแลซ่อมแม็คบุคทุกรุ่นโดยทีมงานมืออาชีพ</p>
         <ul><li>MacBook</li><li>เปลี่ยนแบต</li><li>ลงเครื่อง</li></ul>
@@ -326,11 +429,46 @@
       <p>ร้านแบงค์เทเลคอมเซอร์วิส ดูแลด้วยใจ ซ่อมตรงจุด ราคายุติธรรม</p>
     </div>
     <div class="why-grid">
-      <div class="why-item"><div class="ic">🏆</div><h3>ประสบการณ์ 10+ ปี</h3><p>ช่างซ่อมตรงสายจากวงการโทรคมนาคมโดยตรง</p></div>
-      <div class="why-item"><div class="ic">🔍</div><h3>ตรวจเช็คก่อนซ่อม</h3><p>ประเมินอาการและแจ้งราคาก่อนทุกครั้ง ไม่บานปลาย</p></div>
-      <div class="why-item"><div class="ic">🛡️</div><h3>มีรับประกันงาน</h3><p>ใช้อะไหล่คุณภาพ พร้อมรับประกันความสบายใจ</p></div>
-      <div class="why-item"><div class="ic">⚡</div><h3>ซ่อมไว รอรับได้</h3><p>หลายอาการซ่อมเสร็จไว ไม่ต้องรอนาน</p></div>
+      <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-award"/></svg></div><h3>ประสบการณ์ 10+ ปี</h3><p>ช่างซ่อมตรงสายจากวงการโทรคมนาคมโดยตรง</p></div>
+      <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-search"/></svg></div><h3>ตรวจเช็คก่อนซ่อม</h3><p>ประเมินอาการและแจ้งราคาก่อนทุกครั้ง ไม่บานปลาย</p></div>
+      <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-shield"/></svg></div><h3>มีรับประกันงาน</h3><p>ใช้อะไหล่คุณภาพ พร้อมรับประกันความสบายใจ</p></div>
+      <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-bolt"/></svg></div><h3>ซ่อมไว รอรับได้</h3><p>หลายอาการซ่อมเสร็จไว ไม่ต้องรอนาน</p></div>
     </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="section" id="prices">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ราคาเริ่มต้น</span>
+      <h2>ค่าบริการโดยประมาณ</h2>
+      <p>ราคาขึ้นกับรุ่นและอาการเสีย ประเมินหน้าร้านฟรีก่อนซ่อมทุกครั้ง</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card"><div class="ic"><svg class="ico"><use href="#i-screen"/></svg></div><h3>เปลี่ยนจอไอโฟน</h3><div class="price">เริ่มต้น <b>XXX ฿</b></div><span>ตามรุ่น</span></div>
+      <div class="price-card"><div class="ic"><svg class="ico"><use href="#i-battery"/></svg></div><h3>เปลี่ยนแบตไอโฟน</h3><div class="price">เริ่มต้น <b>XXX ฿</b></div><span>ตามรุ่น</span></div>
+      <div class="price-card"><div class="ic"><svg class="ico"><use href="#i-unlock"/></svg></div><h3>ปลดล็อครายเดือน</h3><div class="price">เริ่มต้น <b>XXX ฿</b></div><span>สอบถามช่าง</span></div>
+      <div class="price-card"><div class="ic"><svg class="ico"><use href="#i-watch"/></svg></div><h3>เปลี่ยนจอ Apple Watch</h3><div class="price">เริ่มต้น <b>XXX ฿</b></div><span>ตามรุ่น</span></div>
+    </div>
+    <p class="price-note">💡 ราคาด้านบนเป็นตัวอย่างโครง — แจ้งราคาจริงให้ผมใส่ได้เลยครับ</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ลูกค้าพูดถึงเรา</span>
+      <h2>รีวิวจากลูกค้าจริง</h2>
+      <p>คะแนนรวม <b style="color:var(--brand)">4.8 / 5</b> จาก 110 รีวิวบน Google</p>
+    </div>
+    <div class="review-grid">
+      <div class="review-card"><div class="stars">★★★★★</div><p>ช่างเก่ง ซ่อมไว ราคาเป็นกันเอง เปลี่ยนจอไอโฟนเสร็จไวมาก แนะนำเลยครับ</p><b>— ลูกค้า Google</b></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>ปลดล็อคเครื่องติดรายเดือนให้ได้ บริการดี อธิบายละเอียด ไว้ใจได้</p><b>— ลูกค้า Google</b></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>เปลี่ยนแบตให้ใช้ได้เหมือนใหม่ ร้านใกล้บ้าน สะดวกมาก</p><b>— ลูกค้า Google</b></div>
+    </div>
+    <p class="price-note">💡 ข้อความรีวิวเป็นตัวอย่าง — ดึงรีวิวจริงจาก Google มาแทนได้ บอกผมได้เลย</p>
   </div>
 </section>
 
@@ -372,6 +510,82 @@
   </div>
 </section>
 
+<!-- ARTICLE / SEO -->
+<section class="section article" id="articles">
+  <div class="wrap article-wrap">
+    <div class="section-head">
+      <span class="eyebrow">ความรู้ก่อนซ่อม</span>
+      <h2>คู่มือซ่อมไอโฟน ไอแพด แม็คบุค แอปเปิลวอช และแอร์พอด</h2>
+      <p>รวมอาการเสียที่พบบ่อยและแนวทางแก้ไข โดยร้านแบงค์เทเลคอมเซอร์วิส กำแพงเพชร</p>
+    </div>
+    <article class="prose">
+      <p class="lead">อุปกรณ์ Apple ทุกชิ้น ตั้งแต่ <strong>iPhone, iPad, MacBook, Apple Watch ไปจนถึง AirPods</strong> ล้วนมีอาการเสียที่ซ่อมได้ ไม่จำเป็นต้องซื้อใหม่เสมอไป บทความนี้รวบรวมอาการยอดฮิต เช่น หน้าจอเสีย แบตหมดไว ชาร์จไม่เข้า และเครื่องติดล็อก iCloud พร้อมแนวทางที่ทีมช่างของเราดูแลให้ลูกค้าในกำแพงเพชรมากว่า 10 ปี</p>
+
+      <h3>ซ่อมไอโฟน (iPhone) ครบทุกอาการ</h3>
+      <p>ไอโฟนเป็นเครื่องที่เรารับซ่อมมากที่สุด ด้วยอะไหล่คุณภาพและการตรวจเช็กอาการก่อนเสมอ ลูกค้าจึงรู้ค่าใช้จ่ายชัดเจนก่อนตัดสินใจ</p>
+      <h4>หน้าจอไอโฟนแตก จอเป็นเส้น ทัชไม่ทำงาน</h4>
+      <p>อาการ <strong>หน้าจอเสีย</strong> มีหลายระดับ ตั้งแต่กระจกร้าวแต่ภาพยังปกติ ไปจนถึงจอดับสนิท เป็นเส้น มีจุดด่าง หรือทัชสกรีนกดไม่ติด เราให้บริการทั้ง <strong>เปลี่ยนจอแท้</strong> และจอคุณภาพเทียบเท่า รวมถึง <strong>ลอกเฉพาะกระจก</strong> สำหรับเครื่องที่จอด้านในยังดี ช่วยประหยัดค่าใช้จ่ายได้มาก</p>
+      <h4>แบตไอโฟนหมดไว แบตเสื่อม เครื่องร้อน</h4>
+      <p>ถ้าสังเกตว่า <strong>แบตหมดไว</strong> ผิดปกติ เปอร์เซ็นต์สุขภาพแบต (Battery Health) ต่ำกว่า 80% เครื่องดับเองทั้งที่ยังมีแบตเหลือ หรือเครื่องร้อน/แบตบวมจนดันจอ ควรเปลี่ยนแบตโดยเร็วเพื่อความปลอดภัย เราเปลี่ยนแบตคุณภาพให้ใช้งานได้เต็มวันเหมือนเดิม</p>
+      <h4>ไอโฟนชาร์จไม่เข้า ชาร์จติด ๆ ดับ ๆ</h4>
+      <p>อาการ <strong>ชาร์จไม่เข้า</strong> มักเกิดจากช่องชาร์จมีฝุ่น/ขี้ตะกอน สายหรือหัวชาร์จเสื่อม ตูดชาร์จ (Charging Port) หลวมหรือเสีย หรือปัญหาในระดับวงจร เราตรวจหาสาเหตุที่แท้จริงก่อน แล้วทำความสะอาดหรือเปลี่ยนตูดชาร์จให้ตรงจุด ไม่เหมารวม</p>
+
+      <h3>ซ่อมไอแพด (iPad) จอแตก แบตเสื่อม</h3>
+      <p>ไอแพดจอใหญ่ มักเจอ <strong>จอแตก จอเป็นเส้น ทัชเพี้ยน</strong> จากการตกหรือถูกกดทับ เรารับเปลี่ยนจอไอแพดทุกรุ่นรวมถึงไอแพดเจนใหม่ ๆ พร้อมบริการเปลี่ยนแบตไอแพดที่เสื่อม/บวม และแก้อาการชาร์จไม่เข้า เปิดไม่ติด</p>
+
+      <h3>ซ่อมแม็คบุค (MacBook) เครื่องช้า เปิดไม่ติด</h3>
+      <p>MacBook ที่ใช้มานานอาจ <strong>เครื่องช้า แบตเสื่อม จอเสีย คีย์บอร์ดรวน หรือเปิดไม่ติด</strong> รวมถึงเครื่องโดนน้ำ เราตรวจเช็กและซ่อมระดับบอร์ด เปลี่ยนแบต ลงเครื่อง/ติดตั้งระบบใหม่ ดูแลให้กลับมาใช้งานลื่นไหล</p>
+
+      <h3>เปลี่ยนจอและแบต Apple Watch</h3>
+      <p>แอปเปิลวอชมักเจอ <strong>กระจกหน้าจอแตก จอเด้ง/บวมจากแบตเสื่อม หรือแบตหมดไว</strong> เรารับเปลี่ยนจอ Apple Watch และเปลี่ยนแบตให้ใช้งานได้ตามปกติ โดยช่างที่ชำนาญงานชิ้นเล็กโดยเฉพาะ</p>
+
+      <h3>ซ่อม AirPods แบตเสื่อม เสียงเบา</h3>
+      <p>หูฟัง AirPods ที่ใช้นานมักมีอาการ <strong>แบตหมดเร็ว ชาร์จไม่เข้า เสียงเบาหรือดังข้างเดียว</strong> เรารับตรวจเช็กและซ่อม/เปลี่ยนแบตหูฟัง AirPods รวมถึงทำความสะอาดให้เสียงกลับมาคมชัด</p>
+
+      <h3>ปลดล็อก iCloud และเครื่องติดรายเดือน</h3>
+      <p>เครื่องที่ขึ้น <strong>iPhone ถูกล็อกโดยเจ้าของเครื่อง (iCloud Lock)</strong> หรือ <strong>เครื่องติดล็อกรายเดือน/ไฟแนนซ์</strong> ทำให้ใช้งานไม่ได้ เรามีบริการปรึกษาและ <strong>ปลดล็อก iCloud / ปลดล็อกรายเดือน</strong> สำหรับหลายยี่ห้อทั้ง iPhone, Samsung, OPPO, VIVO, Huawei และ Realme แนะนำให้ทักสอบถามอาการและรุ่นเครื่องก่อน เพื่อประเมินว่าทำได้หรือไม่และค่าใช้จ่ายเท่าไร</p>
+
+      <p class="lead">📍 ทุกบริการประเมินอาการ<strong>ฟรี</strong>ก่อนซ่อม ที่ร้านแบงค์เทเลคอมเซอร์วิส เซเว่นบ้านใหม่–ท่าขุนราม กำแพงเพชร โทร <a href="tel:0933068266" style="color:var(--brand)"><strong>093-3068266</strong></a> หรือแชทไลน์ banktelecom</p>
+    </article>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">คำถามที่พบบ่อย</span>
+      <h2>คำถามก่อนนำเครื่องมาซ่อม</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>เปลี่ยนจอไอโฟนใช้เวลานานไหม?</summary>
+        <div class="faq-a">ส่วนใหญ่เปลี่ยนจอเสร็จภายในวันเดียว หลายรุ่นรอรับได้เลย ขึ้นอยู่กับรุ่นและสต็อกอะไหล่ แนะนำโทรเช็กก่อนเข้าร้านเพื่อความรวดเร็ว</div>
+      </details>
+      <details class="faq-item">
+        <summary>แบตไอโฟนเสื่อม ดูยังไงว่าควรเปลี่ยน?</summary>
+        <div class="faq-a">เข้าไปดูที่ ตั้งค่า &gt; แบตเตอรี่ &gt; สุขภาพแบตเตอรี่ ถ้าต่ำกว่า 80% หรือเครื่องดับเองทั้งที่แบตยังเหลือ แบตบวมดันจอ ควรเปลี่ยนแบตเพื่อความปลอดภัย</div>
+      </details>
+      <details class="faq-item">
+        <summary>ไอโฟนชาร์จไม่เข้า ต้องเปลี่ยนตูดชาร์จเลยไหม?</summary>
+        <div class="faq-a">ไม่เสมอไป หลายครั้งเกิดจากฝุ่นอุดช่องชาร์จหรือสาย/หัวชาร์จเสื่อม เราจะตรวจหาสาเหตุจริงก่อน ถ้าทำความสะอาดแล้วหายก็ไม่ต้องเปลี่ยนอะไหล่</div>
+      </details>
+      <details class="faq-item">
+        <summary>เครื่องติดล็อก iCloud หรือติดรายเดือน ปลดได้ไหม?</summary>
+        <div class="faq-a">บางกรณีทำได้ ขึ้นอยู่กับรุ่นและสถานะเครื่อง รบกวนทักไลน์หรือโทรแจ้งรุ่นและอาการก่อน เพื่อให้ช่างประเมินว่าทำได้หรือไม่และค่าใช้จ่ายเท่าไร</div>
+      </details>
+      <details class="faq-item">
+        <summary>มีประเมินราคาก่อนซ่อมไหม เสียค่าตรวจเช็กหรือเปล่า?</summary>
+        <div class="faq-a">เราตรวจเช็กและประเมินราคาให้ฟรีก่อนทุกครั้ง แจ้งราคาชัดเจนก่อนลงมือซ่อม ไม่มีบานปลาย</div>
+      </details>
+      <details class="faq-item">
+        <summary>ร้านอยู่ตรงไหน เปิดกี่โมง?</summary>
+        <div class="faq-a">ร้านแบงค์เทเลคอมเซอร์วิส เซเว่นบ้านใหม่–ท่าขุนราม อ.เมือง จ.กำแพงเพชร (มี 2 สาขา) โทร 093-3068266 — เปิดทุกวัน เวลา 07:30–19:00 น.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="section">
   <div class="wrap">
@@ -397,13 +611,14 @@
     </div>
     <div class="contact-grid">
       <div class="contact-info">
-        <div class="row"><span class="ic">📞</span><div><b>โทรศัพท์</b><span>093-3068266 , 092-9622829</span></div></div>
+        <div class="row"><span class="ic">📞</span><div><b>โทรศัพท์</b><span>093-3068266 (สนง.ใหญ่) , 092-9622829 (สาขา 2)</span></div></div>
         <div class="row"><span class="ic">💬</span><div><b>Line</b><span>banktelecom</span></div></div>
-        <div class="row"><span class="ic">📍</span><div><b>ที่ตั้งร้าน</b><span>เซเว่นบ้านใหม่–ท่าขุนราม อ.เมือง จ.กำแพงเพชร</span></div></div>
-        <div class="row"><span class="ic">🕘</span><div><b>เวลาทำการ</b><span>เปิดบริการทุกวัน (โทรสอบถามเวลาก่อนเข้าร้าน)</span></div></div>
+        <div class="row"><span class="ic">🏢</span><div><b>สำนักงานใหญ่</b><span>129/4 หมู่ 5 ต.ท่าขุนราม อ.เมือง จ.กำแพงเพชร 62000</span></div></div>
+        <div class="row"><span class="ic">🏬</span><div><b>สาขา 2 (บ้านหนองกอง)</b><span>90 หมู่ 4 ต.นาบ่อคำ อ.เมือง จ.กำแพงเพชร 62000</span></div></div>
+        <div class="row"><span class="ic">🕘</span><div><b>เวลาทำการ</b><span>เปิดทุกวัน 07:30–19:00 น.</span></div></div>
       </div>
       <div class="map-card">
-        <iframe src="https://www.google.com/maps?q=%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B8%B8%E0%B8%99%E0%B8%A3%E0%B8%B2%E0%B8%A1%20%E0%B8%81%E0%B8%B3%E0%B9%81%E0%B8%9E%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%8A%E0%B8%A3&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps?q=Banktelecomservice%20Kamphaeng%20Phet&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="แผนที่ร้านแบงค์เทเลคอมเซอร์วิส"></iframe>
       </div>
     </div>
   </div>
@@ -432,11 +647,12 @@
           <li><a href="tel:0933068266">📞 093-3068266</a></li>
           <li><a href="tel:0929622829">📞 092-9622829</a></li>
           <li><a href="https://line.me/ti/p/~banktelecom">💬 Line: banktelecom</a></li>
-          <li><a href="#contact">📍 เซเว่นบ้านใหม่–ท่าขุนราม</a></li>
+          <li><a href="https://www.tiktok.com/@bankmobile888" target="_blank" rel="noopener">🎵 TikTok: bankmobile888</a></li>
+          <li><a href="#contact">📍 ท่าขุนราม • นาบ่อคำ (2 สาขา)</a></li>
         </ul>
       </div>
     </div>
-    <div class="foot-bottom">© 2024 แบงค์เทเลคอมเซอร์วิส • ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร</div>
+    <div class="foot-bottom">© <span id="year">2026</span> แบงค์เทเลคอมเซอร์วิส • ร้านซ่อมไอโฟน ซ่อมมือถือ กำแพงเพชร</div>
   </div>
 </footer>
 
@@ -445,6 +661,75 @@
   <a href="tel:0933068266" class="f-call" title="โทร">📞</a>
   <a href="https://line.me/ti/p/~banktelecom" class="f-line" title="Line">💬</a>
 </div>
+
+<!-- Schema.org LocalBusiness — ช่วยให้ขึ้น Google Maps / ผลค้นหาท้องถิ่น -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobilePhoneStore",
+  "name": "แบงค์เทเลคอมเซอร์วิส",
+  "image": "https://www.banktelecomservice.com/",
+  "description": "ศูนย์ซ่อมไอโฟน ไอแพด แม็คบุค แอปเปิลวอช แอร์พอด และมือถือทุกรุ่น เปลี่ยนจอ เปลี่ยนแบต ปลดล็อครายเดือน กำแพงเพชร",
+  "url": "https://www.banktelecomservice.com/",
+  "telephone": "+66933068266",
+  "priceRange": "฿฿",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "129/4 หมู่ 5 ตำบลท่าขุนราม",
+    "addressLocality": "อำเภอเมืองกำแพงเพชร",
+    "addressRegion": "กำแพงเพชร",
+    "postalCode": "62000",
+    "addressCountry": "TH"
+  },
+  "openingHours": "Mo-Su 07:30-19:00",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "110"
+  },
+  "sameAs": ["https://www.tiktok.com/@bankmobile888"]
+}
+</script>
+
+<!-- Schema.org FAQPage — ช่วยให้ขึ้นผลค้นหาแบบ rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"เปลี่ยนจอไอโฟนใช้เวลานานไหม?","acceptedAnswer":{"@type":"Answer","text":"ส่วนใหญ่เปลี่ยนจอเสร็จภายในวันเดียว หลายรุ่นรอรับได้เลย ขึ้นอยู่กับรุ่นและสต็อกอะไหล่ แนะนำโทรเช็กก่อนเข้าร้าน"}},
+    {"@type":"Question","name":"แบตไอโฟนเสื่อม ดูยังไงว่าควรเปลี่ยน?","acceptedAnswer":{"@type":"Answer","text":"ดูที่ ตั้งค่า > แบตเตอรี่ > สุขภาพแบตเตอรี่ ถ้าต่ำกว่า 80% หรือเครื่องดับเองทั้งที่แบตยังเหลือ แบตบวมดันจอ ควรเปลี่ยนแบต"}},
+    {"@type":"Question","name":"ไอโฟนชาร์จไม่เข้า ต้องเปลี่ยนตูดชาร์จเลยไหม?","acceptedAnswer":{"@type":"Answer","text":"ไม่เสมอไป หลายครั้งเกิดจากฝุ่นอุดช่องชาร์จหรือสาย/หัวชาร์จเสื่อม เราจะตรวจหาสาเหตุจริงก่อน"}},
+    {"@type":"Question","name":"เครื่องติดล็อก iCloud หรือติดรายเดือน ปลดได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"บางกรณีทำได้ ขึ้นอยู่กับรุ่นและสถานะเครื่อง รบกวนทักไลน์หรือโทรแจ้งรุ่นและอาการก่อนเพื่อให้ช่างประเมิน"}},
+    {"@type":"Question","name":"มีประเมินราคาก่อนซ่อมไหม?","acceptedAnswer":{"@type":"Answer","text":"เราตรวจเช็กและประเมินราคาให้ฟรีก่อนทุกครั้ง แจ้งราคาชัดเจนก่อนลงมือซ่อม ไม่มีบานปลาย"}}
+  ]
+}
+</script>
+
+<script>
+  // เมนูมือถือ (แฮมเบอร์เกอร์)
+  (function(){
+    var btn = document.getElementById('menuBtn');
+    var menu = document.getElementById('mobileMenu');
+    if(btn && menu){
+      btn.addEventListener('click', function(){
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+        btn.textContent = open ? '✕' : '☰';
+      });
+      menu.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', false);
+          btn.textContent = '☰';
+        });
+      });
+    }
+    // ปี copyright อัตโนมัติ
+    var y = document.getElementById('year');
+    if(y) y.textContent = new Date().getFullYear();
+  })();
+</script>
 
 </body>
 </html>
