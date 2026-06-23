@@ -104,6 +104,16 @@
   .faq-item[open] summary::after{transform:rotate(45deg)}
   .faq-item .faq-a{padding:0 24px 22px;color:var(--ink-soft);font-size:.97rem;line-height:1.7}
 
+  /* article */
+  .article{background:var(--bg-soft)}
+  .prose{max-width:840px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px 40px;box-shadow:var(--shadow)}
+  .prose h3{font-size:1.22rem;color:var(--brand);margin:26px 0 10px;padding-top:20px;border-top:1px solid var(--line)}
+  .prose h3:first-child{margin-top:0;padding-top:0;border-top:0}
+  .prose p{color:var(--ink-soft);margin-bottom:12px;font-size:1rem}
+  .prose p.lead{color:var(--ink);font-size:1.06rem}
+  .prose strong{color:var(--ink);font-weight:600}
+  @media(max-width:560px){.prose{padding:26px 22px}}
+
   /* cta */
   .cta{background:linear-gradient(135deg,var(--brand),#ff6a3d);color:#fff;border-radius:30px;padding:52px;text-align:center}
   .cta h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:12px}
@@ -284,6 +294,40 @@
       <div class="price-line"><div class="name">ชาร์จไม่เข้า / ตูดชาร์จ <small>ตรวจเช็กก่อน อาจแค่ทำความสะอาด</small></div><div class="amt">สอบถามช่าง</div></div>
     </div>
     <p class="price-note">💡 ราคาเป็นค่าเริ่มต้นโดยประมาณ แจ้งรุ่นเครื่องเพื่อรับราคาจริงได้ที่ Line: banktelecom</p>
+  </div>
+</section>
+
+<!-- ARTICLE -->
+<section class="section article">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ปัญหาไอโฟนยอดฮิต</span>
+      <h2>อาการไอโฟนที่เรารับซ่อมบ่อย</h2>
+      <p>รวมอาการที่ลูกค้ากำแพงเพชรเจอบ่อย พร้อมแนวทางที่เราดูแลให้</p>
+    </div>
+    <article class="prose">
+      <p class="lead">นอกจากเปลี่ยนจอและแบต ไอโฟนยังมีอาการเสียอีกหลายแบบที่ซ่อมได้ ไม่ต้องเปลี่ยนเครื่องใหม่ ทีมช่างของเราตรวจเช็กและแจ้งราคาก่อนซ่อมเสมอ</p>
+
+      <h3>ไอโฟนค้าง เปิดไม่ติด ค้างโลโก้แอปเปิล</h3>
+      <p>เครื่องดับแล้วเปิดไม่ขึ้น ค้างที่<strong>โลโก้แอปเปิล</strong> รีสตาร์ทวนไปมา (boot loop) อาจเกิดจากระบบ ปัญหาซอฟต์แวร์ หรือฮาร์ดแวร์ในเครื่อง เราตรวจหาสาเหตุและกู้เครื่องให้กลับมาใช้งานได้</p>
+
+      <h3>หน้าจอเขียว จอเพี้ยน เป็นเส้น</h3>
+      <p>อาการ <strong>หน้าจอเขียว</strong> จอมีเส้น สั่น หรือสีเพี้ยน มักมาจากจอเสียหรือสายแพจอหลวม เราเปลี่ยนจอแท้/จอคุณภาพให้ภาพกลับมาคมชัดเหมือนเดิม</p>
+
+      <h3>กระจกฝาหลังไอโฟนแตก</h3>
+      <p>ฝาหลังกระจกร้าวหรือแตก นอกจากดูไม่สวยยังบาดมือและเสี่ยงต่อกล้อง เรารับ<strong>เปลี่ยนกระจกฝาหลังไอโฟน</strong> ให้เรียบเนียนเหมือนใหม่</p>
+
+      <h3>ไอโฟนช้าลง อืดหลังอัปเดต</h3>
+      <p>หลายคนเจอ <strong>ไอโฟนช้าลงหลังอัปเดต</strong> เครื่องอืด ค้าง แอปเด้ง ส่วนหนึ่งมาจากแบตเสื่อมที่ทำให้ระบบลดประสิทธิภาพลง เราตรวจเช็กและแนะนำแนวทาง เช่น เปลี่ยนแบตหรือเคลียร์ระบบ</p>
+
+      <h3>ไอโฟนไม่มีเสียง เสียงเบา ไมค์ไม่เข้า</h3>
+      <p>ลำโพงไม่ดัง เสียงแตก คู่สายไม่ได้ยิน หรือไมค์ไม่ทำงาน อาจเกิดจากลำโพง/ไมค์เสียหรือมีฝุ่นอุดตัน เราทำความสะอาดหรือเปลี่ยนอะไหล่ตามอาการ</p>
+
+      <h3>ปลดล็อกไอคราว (iCloud) เครื่องติดล็อก</h3>
+      <p>เครื่องขึ้น <strong>iPhone ถูกล็อกโดยเจ้าของเครื่อง</strong> หรือ <strong>ติดล็อกรายเดือน</strong> ทำให้ใช้งานไม่ได้ ปรึกษาเราก่อนได้ จะประเมินตามรุ่นและสถานะเครื่องว่าทำได้หรือไม่และค่าใช้จ่ายเท่าไร</p>
+
+      <p class="lead">📍 ทุกอาการประเมิน<strong>ฟรี</strong>ก่อนซ่อม ที่ร้านแบงค์เทเลคอมเซอร์วิส เซเว่นบ้านใหม่–ท่าขุนราม กำแพงเพชร โทร <a href="tel:0933068266" style="color:var(--brand)"><strong>093-3068266</strong></a></p>
+    </article>
   </div>
 </section>
 
