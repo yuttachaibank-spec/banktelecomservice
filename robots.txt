@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.banktelecomservice.com/sitemap.xml
+Sitemap: https://yuttachaibank-spec.github.io/banktelecomservice/sitemap.xml
