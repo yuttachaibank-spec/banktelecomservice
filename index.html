@@ -183,6 +183,18 @@
   .card ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
   .card ul li{font-size:.8rem;background:var(--bg-soft);border:1px solid var(--line);padding:5px 12px;border-radius:999px;color:var(--ink-soft)}
 
+  .card .card-img{display:block;width:calc(100% + 52px);height:190px;object-fit:cover;margin:-30px -26px 22px}
+
+  /* ---------- Shop band ---------- */
+  .shopband{background:var(--bg-soft)}
+  .shopband .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .shopband img{width:100%;height:100%;max-height:360px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+  .shopband h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin-bottom:14px}
+  .shopband p{color:var(--ink-soft);font-size:1.05rem;margin-bottom:14px}
+  .shopband .s-feat{display:flex;flex-direction:column;gap:10px;margin-bottom:22px}
+  .shopband .s-feat span{display:flex;align-items:center;gap:10px;font-family:'Kanit';font-weight:500}
+  @media(max-width:820px){.shopband .wrap{grid-template-columns:1fr}.shopband img{max-height:260px}}
+
   /* ---------- Why ---------- */
   .why{background:var(--bg-soft)}
   .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
@@ -542,37 +554,37 @@
     </div>
     <div class="grid-cards">
       <div class="card">
-        <div class="ic"><svg class="ico"><use href="#i-screen"/></svg></div>
+        <img class="card-img" src="images/repair-screen.jpg" alt="เปลี่ยนจอไอโฟน ลอกกระจก กำแพงเพชร" loading="lazy">
         <h3>เปลี่ยนจอ–ลอกกระจก</h3>
         <p>จอแตก จอเป็นเส้น ทัชไม่ติด เปลี่ยนจอแท้และจอคุณภาพ พร้อมบริการลอกกระจกไอโฟน</p>
         <ul><li>จอไอโฟน</li><li>จอไอแพด</li><li>เปลี่ยนจอแท้</li><li>ลอกจอ</li></ul>
       </div>
       <div class="card">
-        <div class="ic"><svg class="ico"><use href="#i-battery"/></svg></div>
+        <img class="card-img" src="images/repair-battery.jpg" alt="เปลี่ยนแบตไอโฟน แบตเสื่อม แบตบวม กำแพงเพชร" loading="lazy">
         <h3>เปลี่ยนแบตเตอรี่</h3>
         <p>แบตเสื่อม แบตบวม เครื่องร้อน ดับเอง เปลี่ยนแบตคุณภาพให้เครื่องกลับมาใช้ได้เต็มวัน</p>
         <ul><li>แบตไอโฟน</li><li>แบตไอแพด</li><li>แบตแอร์พอด</li></ul>
       </div>
       <div class="card">
-        <div class="ic"><svg class="ico"><use href="#i-unlock"/></svg></div>
+        <img class="card-img" src="images/repair-unlock.jpg" alt="ปลดล็อครายเดือน iCloud กำแพงเพชร" loading="lazy">
         <h3>ปลดล็อครายเดือน</h3>
         <p>เครื่องติดล็อครายเดือน ติด iCloud ปลดล็อคให้ใช้งานได้ตามปกติ รองรับหลายยี่ห้อ</p>
         <ul><li>ติดรายเดือน</li><li>iCloud</li><li>OPPO/VIVO</li><li>Samsung</li></ul>
       </div>
       <div class="card">
-        <div class="ic"><svg class="ico"><use href="#i-watch"/></svg></div>
+        <img class="card-img" src="images/repair-watch-airpods.jpg" alt="ซ่อม Apple Watch AirPods กำแพงเพชร" loading="lazy">
         <h3>Apple Watch & AirPods</h3>
         <p>เปลี่ยนจอกระจก Apple Watch ที่แตก ซ่อมหูฟัง AirPods แบตเสื่อม แบตหมดเร็ว</p>
         <ul><li>จอ Apple Watch</li><li>ซ่อม AirPods</li><li>เปลี่ยนแบต</li></ul>
       </div>
       <div class="card">
-        <div class="ic"><svg class="ico"><use href="#i-water"/></svg></div>
+        <img class="card-img" src="images/repair-board.jpg" alt="ซ่อมบอร์ดไอโฟน เครื่องตกน้ำ กำแพงเพชร" loading="lazy">
         <h3>ซ่อมบอร์ด–เครื่องตกน้ำ</h3>
         <p>เปิดไม่ติด เครื่องตกน้ำ กล้องสั่น เสียงไม่ดัง ไวไฟใช้ไม่ได้ ซ่อมระดับบอร์ดโดยช่างเฉพาะทาง</p>
         <ul><li>ตกน้ำ</li><li>เปิดไม่ติด</li><li>ฝาหลังแตก</li><li>กล้อง</li></ul>
       </div>
       <div class="card">
-        <div class="ic"><svg class="ico"><use href="#i-laptop"/></svg></div>
+        <img class="card-img" src="images/repair-laptop.jpg" alt="ซ่อมแม็คบุค MacBook กำแพงเพชร" loading="lazy">
         <h3>ซ่อมแม็คบุค MacBook</h3>
         <p>เครื่องช้า เปิดไม่ติด จอเสีย เปลี่ยนแบต ดูแลซ่อมแม็คบุคทุกรุ่นโดยทีมงานมืออาชีพ</p>
         <ul><li>MacBook</li><li>เปลี่ยนแบต</li><li>ลงเครื่อง</li></ul>
@@ -594,6 +606,24 @@
       <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-search"/></svg></div><h3>ตรวจเช็คก่อนซ่อม</h3><p>ประเมินอาการและแจ้งราคาก่อนทุกครั้ง ไม่บานปลาย</p></div>
       <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-shield"/></svg></div><h3>มีรับประกันงาน</h3><p>ใช้อะไหล่คุณภาพ พร้อมรับประกันความสบายใจ</p></div>
       <div class="why-item"><div class="ic"><svg class="ico"><use href="#i-bolt"/></svg></div><h3>ซ่อมไว รอรับได้</h3><p>หลายอาการซ่อมเสร็จไว ไม่ต้องรอนาน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="section shopband">
+  <div class="wrap">
+    <img src="images/shop-front.jpg" alt="ร้านซ่อมไอโฟน แบงค์เทเลคอมเซอร์วิส กำแพงเพชร">
+    <div>
+      <span class="eyebrow">ร้านของเรา</span>
+      <h2>ยินดีต้อนรับสู่ แบงค์เทเลคอมเซอร์วิส</h2>
+      <p>ศูนย์ซ่อมไอโฟน–มือถือครบวงจร เซเว่นบ้านใหม่–ท่าขุนราม กำแพงเพชร ดูแลด้วยทีมช่างมืออาชีพ ประสบการณ์ตรงในวงการโทรคมนาคมกว่า 10 ปี</p>
+      <div class="s-feat">
+        <span>🧑‍🔧 ช่างชำนาญเฉพาะทาง</span>
+        <span>🛡️ อะไหล่คุณภาพ มีรับประกันงาน</span>
+        <span>💰 ประเมินอาการ &amp; แจ้งราคาฟรีก่อนซ่อม</span>
+      </div>
+      <a href="#contact" class="btn btn-primary">📍 ดูที่ตั้ง &amp; ติดต่อร้าน</a>
     </div>
   </div>
 </section>
