@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://iphoneservicekpp.com/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://iphoneservicekpp.com/images/yai-it-storefront-thakhunram-kamphaengphet.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://iphoneservicekpp.com/iphone-repair/</loc>
@@ -47,6 +51,9 @@
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://iphoneservicekpp.com/images/yai-it-storefront-thakhunram-kamphaengphet.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://iphoneservicekpp.com/service-areas/sai-ngam/</loc>
