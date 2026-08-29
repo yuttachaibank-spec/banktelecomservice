@@ -369,9 +369,13 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "MobilePhoneStore"],
+  "@type": ["LocalBusiness", "MobilePhoneStore", "ElectronicsStore"],
   "@id": "https://iphoneservicekpp.com/#store",
-  "name": "ศูนย์บริการซ่อม iPhone iPad MacBook กำแพงเพชร",
+  "name": "ใหญ่ไอทีเซอร์วิส",
+  "alternateName": [
+    "ใหญ่ไอที",
+    "ศูนย์บริการซ่อม iPhone iPad MacBook กำแพงเพชร"
+  ],
   "description": "ร้านซ่อมอุปกรณ์ Apple โดยช่างอิสระ กำแพงเพชร รับซ่อมไอโฟน ไอแพด แม็คบุค แอปเปิลวอช เปลี่ยนจอ เปลี่ยนแบต ซ่อมบอร์ด กู้ข้อมูล",
   "image": {
     "@type": "ImageObject",
@@ -390,11 +394,23 @@
   "url": "https://iphoneservicekpp.com/",
   "telephone": "+66925417994",
   "priceRange": "฿฿",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "38"
-  },
+  "currenciesAccepted": "THB",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+66925417994",
+      "contactType": "customer service",
+      "availableLanguage": ["th"],
+      "areaServed": "TH"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+66960892797",
+      "contactType": "customer service",
+      "availableLanguage": ["th"],
+      "areaServed": "TH"
+    }
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "บ้านใหม่สุวรรณภูมิ เลขที่ 161 ตำบลท่าขุนราม",
@@ -409,24 +425,75 @@
     "longitude": 99.4595843
   },
   "hasMap": "https://maps.app.goo.gl/ACBUesAWJ8fCGt9X6",
-  "openingHours": "Mo-Su 07:30-19:00",
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     "opens": "07:30",
     "closes": "19:00"
   }],
+  "areaServed": [
+    {"@type":"AdministrativeArea","name":"อำเภอเมืองกำแพงเพชร"},
+    {"@type":"AdministrativeArea","name":"อำเภอไทรงาม"},
+    {"@type":"AdministrativeArea","name":"อำเภอพรานกระต่าย"},
+    {"@type":"AdministrativeArea","name":"อำเภอคลองขลุง"},
+    {"@type":"AdministrativeArea","name":"อำเภอคลองลาน"},
+    {"@type":"AdministrativeArea","name":"อำเภอปางศิลาทอง"},
+    {"@type":"AdministrativeArea","name":"อำเภอขาณุวรลักษบุรี"}
+  ],
   "sameAs": [
     "https://www.facebook.com/profile.php?id=61564009258740",
     "https://www.tiktok.com/@bankmobile888"
   ],
-  "makesOffer": [
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"เปลี่ยนจอไอโฟน–ลอกกระจก"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"เปลี่ยนแบตเตอรี่มือถือ"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"ปลดล็อครายเดือน"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"ซ่อมบอร์ด–เครื่องตกน้ำ"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"ซ่อมแม็คบุค MacBook"}}
-  ]
+  "knowsAbout": [
+    "ซ่อม iPhone",
+    "ซ่อม iPad",
+    "ซ่อม MacBook",
+    "ซ่อม Apple Watch",
+    "ซ่อม AirPods",
+    "ซ่อมบอร์ดและกู้ข้อมูล"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "บริการซ่อมอุปกรณ์ Apple",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ซ่อม iPhone",
+          "url": "https://iphoneservicekpp.com/iphone-repair/",
+          "provider": {"@id": "https://iphoneservicekpp.com/#store"}
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ซ่อม iPad",
+          "url": "https://iphoneservicekpp.com/ipad-repair/",
+          "provider": {"@id": "https://iphoneservicekpp.com/#store"}
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ซ่อม MacBook",
+          "url": "https://iphoneservicekpp.com/macbook-repair/",
+          "provider": {"@id": "https://iphoneservicekpp.com/#store"}
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ซ่อม Apple Watch และ AirPods",
+          "url": "https://iphoneservicekpp.com/apple-watch-airpods/",
+          "provider": {"@id": "https://iphoneservicekpp.com/#store"}
+        }
+      }
+    ]
+  }
 }
 </script>
 
@@ -443,6 +510,39 @@
     {"@type":"Question","name":"ใช้จอแท้กับจอเทียบต่างกันอย่างไร เลือกแบบไหนดี?","acceptedAnswer":{"@type":"Answer","text":"จอแท้ให้สีและการสัมผัสตรงตามเครื่องเดิมและทนกว่า ส่วนจอเทียบราคาประหยัดกว่า ทางร้านมีให้เลือกทั้งสองแบบพร้อมอธิบายข้อดีข้อจำกัด เพื่อให้เหมาะกับงบและการใช้งาน"}},
     {"@type":"Question","name":"ซ่อมแล้วมีรับประกันไหม?","acceptedAnswer":{"@type":"Answer","text":"งานซ่อมมีรับประกัน เช่น เปลี่ยนจอและเปลี่ยนแบต หากมีปัญหาจากอะไหล่ภายในระยะประกันสามารถนำกลับมาเคลมได้ สอบถามเงื่อนไขตามแต่ละงานได้ที่หน้าร้าน"}},
     {"@type":"Question","name":"ไม่ได้อยู่กำแพงเพชร ส่งเครื่องมาซ่อมทางไปรษณีย์ได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"ได้ ลูกค้าต่างจังหวัดสามารถส่งเครื่องมาซ่อมได้ ทักไลน์ 0960892797 เพื่อแจ้งอาการและสอบถามขั้นตอนการส่งและค่าบริการก่อนได้เลย"}}
+  ]
+}
+</script>
+
+<!-- Structured Data: WebSite and WebPage entity graph -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://iphoneservicekpp.com/#website",
+      "url": "https://iphoneservicekpp.com/",
+      "name": "ใหญ่ไอทีเซอร์วิส",
+      "alternateName": "ศูนย์บริการซ่อม iPhone iPad MacBook กำแพงเพชร",
+      "inLanguage": "th-TH",
+      "publisher": {"@id": "https://iphoneservicekpp.com/#store"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://iphoneservicekpp.com/#webpage",
+      "url": "https://iphoneservicekpp.com/",
+      "name": "ศูนย์ซ่อม iPhone iPad MacBook กำแพงเพชร | ใหญ่ไอทีเซอร์วิส",
+      "inLanguage": "th-TH",
+      "isPartOf": {"@id": "https://iphoneservicekpp.com/#website"},
+      "about": {"@id": "https://iphoneservicekpp.com/#store"},
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://iphoneservicekpp.com/#storefront-image",
+        "contentUrl": "https://iphoneservicekpp.com/images/yai-it-storefront-thakhunram-kamphaengphet.webp",
+        "caption": "หน้าร้านจริงใหญ่ไอทีเซอร์วิส ตำบลท่าขุนราม กำแพงเพชร"
+      }
+    }
   ]
 }
 </script>
