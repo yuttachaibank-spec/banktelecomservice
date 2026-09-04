@@ -54,9 +54,30 @@
   </url>
   <url>
     <loc>https://iphoneservicekpp.com/articles/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://iphoneservicekpp.com/smartphone-battery-health-when-to-replace/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://iphoneservicekpp.com/images/smartphone-battery-health-check-kamphaengphet.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://iphoneservicekpp.com/phone-water-damage-first-aid/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://iphoneservicekpp.com/images/phone-water-damage-first-aid-kamphaengphet.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://iphoneservicekpp.com/installment-lock-safety-data/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://iphoneservicekpp.com/images/installment-lock-owner-verification-kamphaengphet.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://iphoneservicekpp.com/service-areas/</loc>
@@ -141,9 +162,10 @@
   </url>
   <url>
     <loc>https://iphoneservicekpp.com/iphone-13-14-pro-white-green-screen-repair/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image><image:loc>https://iphoneservicekpp.com/images/iphone-green-white-screen-repair-kamphaengphet.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://iphoneservicekpp.com/iphone-battery-health-bms-transfer/</loc>
